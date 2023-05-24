@@ -1,0 +1,53 @@
+@font-face{
+	font-family : "IndustryBold";
+	src:  url("./fonts/Industry-Bold.ttf");
+}
+@font-face{
+	font-family : "IndustryBlack";
+	src:  url("./fonts/Industry-Black.ttf");
+}
+@font-face{
+	font-family : "IndustryMedium";
+	src:  url("./fonts/Industry-Medium.ttf");
+}
+
+body, .create-panel, .manage-panel{
+    font-family: "IndustryMedium" !important;
+	color: white;
+
+	&::-webkit-scrollbar{
+		width : 4px;
+	}
+
+	&::-webkit-scrollbar-track{
+		background-color: #e4e4e4;
+		border-radius: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #6060b8;
+		border-radius: 4px;
+	}
+}
+
+.MuiListItemText-primary{
+    font-family: "IndustryMedium" !important;
+}
+
+.dashboard{
+	margin-top: 90px;
+	display: flex;
+	justify-content: center;
+
+	.btn-mint{
+		width: 200px;
+		border-radius: 0.8rem;
+		font-family: "IndustryMedium";
+		font-size: 20px;
+		color: white
+	}
+}
+
+.ant-notification{
+	z-index: 100000;
+}
